@@ -16,6 +16,13 @@
 
 //Code here
 
+let me = {
+  name: "Mike",
+  age: 29,
+}
+
+alert(me.name)
+
 
 
 ////////// PROBLEM 2 //////////
@@ -27,6 +34,15 @@
 
 //Code here
 
+let favoriteThings = {
+  band: 'Band of Horses',
+  food: 'Pizza',
+  person: 'Mom',
+  book: 'A walk in the woods',
+  movie: 'Interstellar',
+  holiday: 'Thanksgiving'
+}
+
 
 
 /*
@@ -34,6 +50,10 @@
 */
 
 //Code here
+
+favoriteThings.car = "van"
+favoriteThings.brand = "toyota"
+
 
 
 
@@ -43,6 +63,8 @@
 
 //Code here
 
+favoriteThings.food = "Chicken Nuggets"
+favoriteThings.book = "Harry Potter"
 
 
 ////////// PROBLEM 3 //////////
@@ -57,6 +79,15 @@
 
 //Code here
 
+let backPack = {}
+
+let item = "firstPocket"
+
+backPack['firstPocket'] = item;
+backPack.firstPocket = "chapstick"
+
+backPack.color = "black"
+
 
 
 /*
@@ -64,6 +95,8 @@
 */
 
 //Code here
+
+alert(backPack)
 
 
 
@@ -74,6 +107,8 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
+
+console.log(backPack)
 
 
 
@@ -98,6 +133,9 @@ var user2 = {
 
 //Code Here
 
+user2.name = "Tyler S. McGinnis"
+user2.email = "tyler.mcginnis@devmounta.in"
+
 
 
 
@@ -121,6 +159,8 @@ var user2 = {
 
 //Code Here
 
+let methodCollection = {}
+
 
 
 /*
@@ -130,6 +170,18 @@ var user2 = {
 
 //Code Here
 
+methodCollection = {
+  
+  alertHello: function (){
+    alert("hello")
+  },
+
+  logHello: function (){
+    console.log("hello")
+  }
+
+}
+
 
 
 /*
@@ -137,6 +189,9 @@ var user2 = {
 */
 
 //Code Here
+
+methodCollection.alertHello()
+methodCollection.logHello()
 
 
 
@@ -149,6 +204,16 @@ var user2 = {
 
 //Code Here
 
+function makePerson(name, birthday, ssn){
+  let person = {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  }
+
+  return person;
+}
+
 
 
 ////////// PROBLEM 7 //////////
@@ -159,5 +224,16 @@ var user2 = {
 */
 
 //Code Here
+
+function makeCard(cardNumber, expirationDate, securityCode){
+let creditCard = {
+number: cardNumber,
+exdate: expirationDate,
+securcode: securityCode
+}
+
+return creditCard
+
+}
 
 
